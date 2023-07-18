@@ -1,38 +1,60 @@
-.App {
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+#root, .App {
+  height: 100%;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.ranking-table th, .ranking-table tr, .ranking-table td {
+  height: 50px;
   text-align: center;
+  vertical-align: middle;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.point-denominator {
+  font-size: 0.7em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user-points {
+  font-weight: bold;
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.current-row td {
+  background-color: #ced4da;
 }
 
-.App-link {
-  color: #61dafb;
+.failed-score {
+  opacity: 0.9;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: red !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.partial-score {
+  opacity: 0.9;
+  border-radius: 10px;
+  background-color: green !important;
+}
+
+.full-score {
+  opacity: 0.9;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #4E9A05 !important;
+}
+
+.pending-score {
+  opacity: 0.9;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #fd7e14 !important;
 }
