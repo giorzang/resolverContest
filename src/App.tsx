@@ -312,24 +312,23 @@ function Ranking({
                     );
                   }
 
-                  const style = {} as React.CSSProperties;
-                  if (
-                    cell.row.original.userId === markedUserId &&
-                    cell.column.id === `problem_${markedProblemId}`
-                  ) {
-                    style.backgroundColor = 'black';
-                  }
-
                   const problemId = cell.column.columnDef.meta?.problemId!;
                   const submissionPoints = cell.getValue() as number;
                   const status = cell.row.original.status[problemId];
                   const scoreClass = cell.row.original.scoreClass[problemId];
                   const isPending = !!(status & ProblemAttemptStatus.PENDING);
-                  const className =
+                  let className =
                     'score-cell ' + (isPending ? 'score_pending' : scoreClass);
 
+                  if (
+                    cell.row.original.userId === markedUserId &&
+                    cell.column.id === `problem_${markedProblemId}`
+                  ) {
+                    className += ' highlighted-cell';
+                  }
+
                   return (
-                    <td style={style} key={cell.id}>
+                    <td key={cell.id}>
                       <div className={className}>
                         {status !== ProblemAttemptStatus.UNATTEMPTED &&
                           submissionPoints}

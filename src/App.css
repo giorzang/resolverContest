@@ -32,7 +32,23 @@ img {
   background-color: #ced4da;
 }
 
+.highlighted-cell {
+  border: 4px solid #000000;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    border-color: #ffffff00;
+  }
+}
+
 .score-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 70px;
   border-radius: 10px;
   font-weight: bold;
   opacity: 0.9;
