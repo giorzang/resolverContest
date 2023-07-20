@@ -42,23 +42,16 @@ export enum ProblemAttemptStatus {
   PENDING = 16
 }
 
-export type UserRow = {
-  rank: string;
-  userId: number;
-  username: string;
-  fullName: string;
-  total: number;
-  penalty: number;
-  points: { [problemId: number]: number };
-  status: { [problemId: number]: ProblemAttemptStatus };
-};
-
 type PointByProblemId = {
   [problemId: number]: number;
 };
 
 type StatusByProblemId = {
   [problemId: number]: ProblemAttemptStatus;
+};
+
+type ScoreClassByProblemId = {
+  [problemId: number]: string;
 };
 
 type ProblemById = {
@@ -72,6 +65,7 @@ type SubmissionById = {
 type InternalUser = InputUser & {
   points: PointByProblemId;
   status: StatusByProblemId;
+  scoreClass: ScoreClassByProblemId;
   lastAlteringScoreSubmissionIdByProblemId: { [problemId: number]: number };
   lastAlteringScoreSubmissionId: number;
   submissionIdsByProblemId: { [problemId: number]: number[] };
@@ -85,8 +79,65 @@ type InternalState = {
   currentRowIndex: number;
   markedUserId: number;
   markedProblemId: number;
+  nextSubmissionId: number;
   users: { [userId: number]: InternalUser };
 };
+
+export type UserRow = {
+  rank: string;
+  userId: number;
+  username: string;
+  fullName: string;
+  total: number;
+  penalty: number;
+  points: PointByProblemId;
+  status: StatusByProblemId;
+  scoreClass: ScoreClassByProblemId;
+};
+
+function getProblemCodeFromIndex(index: number) {
+  const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  const result = [];
+  index += 1;
+  while (index > 0) {
+    result.push(ALPHABET[(index - 1) % 26]);
+    index = (index - 1) / 26;
+  }
+  return result.reverse().join('');
+}
+
+function getScoreClass(userPoints: number, problemPoints: number) {
+  if (userPoints === problemPoints) {
+    return 'score_100';
+  } else if (userPoints === 0) {
+    return 'score_0';
+  } else {
+    return 'score_40_50';
+  }
+
+  // const ratio = userPoints / problemPoints;
+  // if (ratio >= 0.9) {
+  //   return 'score_90_100';
+  // } else if (ratio >= 0.8) {
+  //   return 'score_80_90';
+  // } else if (ratio >= 0.7) {
+  //   return 'score_70_80';
+  // } else if (ratio >= 0.6) {
+  //   return 'score_60_70';
+  // } else if (ratio >= 0.5) {
+  //   return 'score_50_60';
+  // } else if (ratio >= 0.4) {
+  //   return 'score_40_50';
+  // } else if (ratio >= 0.3) {
+  //   return 'score_30_40';
+  // } else if (ratio >= 0.2) {
+  //   return 'score_20_30';
+  // } else if (ratio >= 0.1) {
+  //   return 'score_10_20';
+  // } else {
+  //   return 'score_0_10';
+  // }
+}
 
 function calculatePenalty(user: InternalUser, submissionById: SubmissionById) {
   if (user.lastAlteringScoreSubmissionId === -1) {
@@ -146,6 +197,11 @@ function resolvePendingSubmission({
     user.status[problemId] = ProblemAttemptStatus.ACCEPTED;
   }
 
+  user.scoreClass[problemId] = getScoreClass(
+    user.points[problemId],
+    pointByProblemId[problemId]
+  );
+
   user.pendingSubmissionIds = _.without(
     user.pendingSubmissionIds,
     submissionId
@@ -153,7 +209,7 @@ function resolvePendingSubmission({
 
   user.penalty = calculatePenalty(user, submissionById);
 
-  setState({ ...state, markedProblemId: -1 });
+  setState({ ...state, markedProblemId: -1, nextSubmissionId: -1 });
 }
 
 function rankUsers(
@@ -202,7 +258,7 @@ export function useResolver({
   markedUserId: number;
   markedProblemId: number;
   imageSrc: string | null;
-  step: () => boolean;
+  step: (nextSubmissionOrderToResolve?: number) => boolean;
   rollback: () => void;
 } {
   const userIds = useMemo<number[]>(
@@ -255,10 +311,10 @@ export function useResolver({
       })
     });
 
-    for (const problem of inputData.problems) {
+    inputData.problems.forEach((problem, index) => {
       columns.push({
         id: `problem_${problem.problemId}`,
-        header: 'A',
+        header: getProblemCodeFromIndex(index),
         accessorFn: (row: UserRow) => row.points[problem.problemId],
         meta: {
           isProblem: true,
@@ -266,7 +322,7 @@ export function useResolver({
           points: problem.points
         }
       });
-    }
+    });
 
     columns.push({
       id: 'total',
@@ -292,20 +348,19 @@ export function useResolver({
         currentRowIndex: inputData.users.length - 1,
         markedUserId: -1,
         markedProblemId: -1,
+        nextSubmissionId: -1,
         users: _.keyBy(
           inputData.users.map((user) => ({
             ...user,
             points: _.mapValues(pointByProblemId, () => 0),
             status: _.mapValues(
-              _.keyBy(inputData.problems, 'problemId'),
+              pointByProblemId,
               () => ProblemAttemptStatus.UNATTEMPTED
             ),
+            scoreClass: _.mapValues(pointByProblemId, () => 'a'),
             lastAlteringScoreSubmissionIdByProblemId: {},
             lastAlteringScoreSubmissionId: -1,
-            submissionIdsByProblemId: _.mapValues(
-              _.keyBy(inputData.problems, 'problemId'),
-              () => []
-            ),
+            submissionIdsByProblemId: _.mapValues(pointByProblemId, () => []),
             pendingSubmissionIds: [],
             penalty: 0
           })),
@@ -331,21 +386,30 @@ export function useResolver({
         }
 
         user.submissionIdsByProblemId[problemId].push(submissionId);
-
-        if (user.points[problemId] === 0) {
-          user.status[problemId] = ProblemAttemptStatus.INCORRECT;
-        } else if (user.points[problemId] < pointByProblemId[problemId]) {
-          user.status[problemId] = ProblemAttemptStatus.PARTIAL;
-        } else {
-          user.status[problemId] = ProblemAttemptStatus.ACCEPTED;
-        }
       }
 
       for (const userId in state.users) {
-        state.users[userId].penalty = calculatePenalty(
-          state.users[userId],
-          submissionById
-        );
+        const user = state.users[userId];
+        for (const problemId in problemById) {
+          if (user.submissionIdsByProblemId[problemId].length === 0) {
+            continue;
+          }
+
+          if (user.points[problemId] === 0) {
+            user.status[problemId] = ProblemAttemptStatus.INCORRECT;
+          } else if (user.points[problemId] < pointByProblemId[problemId]) {
+            user.status[problemId] = ProblemAttemptStatus.PARTIAL;
+          } else {
+            user.status[problemId] = ProblemAttemptStatus.ACCEPTED;
+          }
+
+          user.scoreClass[problemId] = getScoreClass(
+            user.points[problemId],
+            pointByProblemId[problemId]
+          );
+        }
+
+        user.penalty = calculatePenalty(user, submissionById);
       }
 
       return state;
@@ -374,7 +438,10 @@ export function useResolver({
         }
       }
 
-      publicUser.pendingSubmissionIds.sort();
+      publicUser.pendingSubmissionIds = _.sortBy(
+        publicUser.pendingSubmissionIds,
+        (id) => submissionById[id].problemId
+      );
     }
 
     return publicState;
@@ -385,100 +452,130 @@ export function useResolver({
     [state, unofficialContestants]
   );
 
-  const step = useCallback(() => {
-    const {
-      shownImage,
-      imageSrc,
-      currentRowIndex,
-      markedUserId,
-      markedProblemId
-    } = state;
-    if (markedUserId !== data[currentRowIndex]?.userId) {
-      setState({
-        ...state,
+  const step = useCallback(
+    (nextSubmissionOrderToResolve?: number) => {
+      const {
+        shownImage,
+        imageSrc,
         currentRowIndex,
-        markedUserId: data[currentRowIndex]?.userId,
-        markedProblemId: -1
-      });
-      return true;
-    }
+        markedUserId,
+        markedProblemId
+      } = state;
+      if (currentRowIndex === -1) {
+        return false;
+      }
 
-    if (currentRowIndex === -1) {
-      return false;
-    }
+      if (markedUserId !== data[currentRowIndex]!.userId) {
+        setState({
+          ...state,
+          currentRowIndex,
+          markedUserId: data[currentRowIndex]!.userId,
+          markedProblemId: -1,
+          nextSubmissionId: -1
+        });
+        console.log('aaaaaaaaaaaaaa');
+        return true;
+      }
 
-    if (
-      !state.users[data[currentRowIndex].userId]?.pendingSubmissionIds?.length
-    ) {
       if (
-        data[currentRowIndex].rank in imageData &&
-        !shownImage &&
-        imageSrc === null
+        !state.users[data[currentRowIndex].userId]!.pendingSubmissionIds!.length
       ) {
+        if (
+          data[currentRowIndex].rank in imageData &&
+          !shownImage &&
+          imageSrc === null
+        ) {
+          setState({
+            ...state,
+            shownImage: true,
+            imageSrc: imageData[data[currentRowIndex].rank]
+          });
+          return true;
+        }
+
+        if (shownImage && imageSrc !== null) {
+          setState({
+            ...state,
+            imageSrc: null
+          });
+          return true;
+        }
+
+        if (currentRowIndex === 0) {
+          setState({
+            ...state,
+            shownImage: false,
+            imageSrc: null,
+            currentRowIndex: -1,
+            markedUserId: -1,
+            markedProblemId: -1,
+            nextSubmissionId: -1
+          });
+          return false;
+        }
+
+        const markedUserId = data[currentRowIndex - 1]!.userId;
         setState({
           ...state,
-          shownImage: true,
-          imageSrc: imageData[data[currentRowIndex].rank]
+          shownImage: false,
+          imageSrc: null,
+          currentRowIndex: currentRowIndex - 1,
+          markedUserId,
+          markedProblemId: -1,
+          nextSubmissionId: -1
+        });
+
+        return true;
+      }
+
+      if (markedProblemId === -1) {
+        let nextSubmissionId;
+        if (nextSubmissionOrderToResolve !== undefined) {
+          if (
+            nextSubmissionOrderToResolve < 0 ||
+            nextSubmissionOrderToResolve >=
+              state.users[markedUserId].pendingSubmissionIds.length
+          ) {
+            console.log('Invalid nextSubmissionOrderToResolve');
+            return true;
+          }
+
+          nextSubmissionId =
+            state.users[markedUserId].pendingSubmissionIds[
+              nextSubmissionOrderToResolve
+            ];
+        }
+
+        if (nextSubmissionId === undefined) {
+          nextSubmissionId =
+            _.minBy(
+              state.users[markedUserId].pendingSubmissionIds,
+              (id) => submissionById[id].problemId
+            ) ?? -1;
+        }
+
+        setState({
+          ...state,
+          currentRowIndex,
+          markedUserId,
+          markedProblemId: submissionById[nextSubmissionId]?.problemId ?? -1,
+          nextSubmissionId
         });
         return true;
       }
 
-      if (shownImage && imageSrc !== null) {
-        setState({
-          ...state,
-          imageSrc: null
-        });
-        return true;
-      }
-
-      const markedUserId = data[currentRowIndex - 1]?.userId;
-      const nextSubmissionId = _.minBy(
-        state.users[markedUserId].pendingSubmissionIds,
-        (id) => submissionById[id].problemId
-      );
-
-      setState({
-        ...state,
-        shownImage: false,
-        imageSrc: null,
-        currentRowIndex: currentRowIndex - 1,
-        markedUserId,
-        markedProblemId: submissionById[nextSubmissionId ?? 0]?.problemId ?? -1
+      resolvePendingSubmission({
+        submissionId: state.nextSubmissionId,
+        submissionById,
+        pointByProblemId,
+        state,
+        setState
       });
 
       return true;
-    }
-
-    if (markedProblemId === -1) {
-      const nextSubmissionId = _.minBy(
-        state.users[markedUserId].pendingSubmissionIds,
-        (id) => submissionById[id].problemId
-      );
-
-      setState({
-        ...state,
-        currentRowIndex,
-        markedUserId,
-        markedProblemId: submissionById[nextSubmissionId ?? 0]?.problemId ?? -1
-      });
-      return true;
-    }
-
-    const nextSubmissionId = _.minBy(
-      state.users[data[currentRowIndex].userId].pendingSubmissionIds,
-      (id) => submissionById[id].problemId
-    );
-
-    resolvePendingSubmission({
-      submissionId: nextSubmissionId!,
-      submissionById,
-      pointByProblemId,
-      state,
-      setState
-    });
-
-    return true;
-  }, [submissionById, pointByProblemId, state, data, imageData, setState]);
+    },
+    [submissionById, pointByProblemId, state, data, imageData, setState]
+  );
 
   return {
     columns,

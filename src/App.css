@@ -32,29 +32,60 @@ img {
   background-color: #ced4da;
 }
 
-.failed-score {
-  opacity: 0.9;
+.score-cell {
   border-radius: 10px;
   font-weight: bold;
-  background-color: red !important;
+  opacity: 0.9;
 }
 
-.partial-score {
-  opacity: 0.9;
-  border-radius: 10px;
-  background-color: green !important;
+.score_pending {
+  background-color: #6666ff !important;
 }
 
-.full-score {
-  opacity: 0.9;
-  border-radius: 10px;
-  font-weight: bold;
+.score_0 {
+  background-color: #F40000 !important;
+}
+
+.score_0_10 {
+  background-color: #EB1D00 !important;
+}
+
+.score_10_20 {
+  background-color: #E23A00 !important;
+}
+
+.score_20_30 {
+  background-color: #D95700 !important;
+}
+
+.score_30_40 {
+  background-color: #D17400 !important;
+}
+
+.score_40_50 {
+  background-color: #C89100 !important;
+}
+
+.score_50_60 {
+  background-color: #B99F00 !important;
+}
+
+.score_60_70 {
+  background-color: #A39E01 !important;
+}
+
+.score_70_80 {
+  background-color: #8E9D02 !important;
+}
+
+.score_80_90 {
+  background-color: #789C03 !important;
+}
+
+.score_90_100 {
+  background-color: #639B04 !important;
+}
+
+.score_100 {
   background-color: #4E9A05 !important;
-}
-
-.pending-score {
-  opacity: 0.9;
-  border-radius: 10px;
-  font-weight: bold;
-  background-color: #fd7e14 !important;
 }

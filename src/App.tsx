@@ -213,6 +213,15 @@ function Ranking({
 
   useKeyPress(',', rollback);
   useKeyPress('.', step);
+  useKeyPress('1', () => step(0));
+  useKeyPress('2', () => step(1));
+  useKeyPress('3', () => step(2));
+  useKeyPress('4', () => step(3));
+  useKeyPress('5', () => step(4));
+  useKeyPress('6', () => step(5));
+  useKeyPress('7', () => step(6));
+  useKeyPress('8', () => step(7));
+  useKeyPress('9', () => step(8));
 
   if (imageSrc !== null) {
     return (
@@ -251,7 +260,7 @@ function Ranking({
         </thead>
         <tbody>
           {table.getRowModel().rows.map((row, ind) => {
-            var className = '';
+            let className = '';
             const animate = {} as Target;
             if (row.original.userId === markedUserId) {
               className = 'current-row';
@@ -282,6 +291,17 @@ function Ranking({
                     );
                   }
 
+                  if (cell.column.columnDef.id === 'penalty') {
+                    return (
+                      <td key={cell.id}>
+                        {flexRender(
+                          cell.column.columnDef.cell,
+                          cell.getContext()
+                        )}
+                      </td>
+                    );
+                  }
+
                   if (cell.column.columnDef.id === 'name') {
                     const { fullName, username } = cell.getValue() as any;
                     return (
@@ -303,16 +323,10 @@ function Ranking({
                   const problemId = cell.column.columnDef.meta?.problemId!;
                   const submissionPoints = cell.getValue() as number;
                   const status = cell.row.original.status[problemId];
+                  const scoreClass = cell.row.original.scoreClass[problemId];
                   const isPending = !!(status & ProblemAttemptStatus.PENDING);
-                  const className = isPending
-                    ? 'pending-score'
-                    : status === ProblemAttemptStatus.ACCEPTED
-                    ? 'full-score'
-                    : status === ProblemAttemptStatus.PARTIAL
-                    ? 'partial-score'
-                    : status === ProblemAttemptStatus.INCORRECT
-                    ? 'failed-score'
-                    : '';
+                  const className =
+                    'score-cell ' + (isPending ? 'score_pending' : scoreClass);
 
                   return (
                     <td style={style} key={cell.id}>
