@@ -26,6 +26,7 @@ img {
 .user-points {
   font-weight: bold;
   color: black;
+  width: 70px;
 }
 
 .current-row td {
