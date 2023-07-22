@@ -184,7 +184,10 @@ function resolvePendingSubmission({
   if (submission.points > user.points[problemId]) {
     user.points[problemId] = submission.points;
     user.lastAlteringScoreSubmissionIdByProblemId[problemId] = submissionId;
-    user.lastAlteringScoreSubmissionId = submissionId;
+    user.lastAlteringScoreSubmissionId = Math.max(
+      user.lastAlteringScoreSubmissionId,
+      submissionId
+    );
   } else if (submission.points === 0 && user.points[problemId] === 0) {
     user.lastAlteringScoreSubmissionIdByProblemId[problemId] = submissionId;
   }
