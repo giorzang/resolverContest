@@ -183,6 +183,7 @@ function Ranking({
   const {
     columns,
     data,
+    currentRowIndex,
     markedUserId,
     markedProblemId,
     imageSrc,
@@ -211,6 +212,8 @@ function Ranking({
     []
   );
 
+  const scrollRowIndex = Math.max(0, currentRowIndex - 12);
+
   useKeyPress(',', rollback);
   useKeyPress('.', step);
   useKeyPress('1', () => step(0));
@@ -222,6 +225,30 @@ function Ranking({
   useKeyPress('7', () => step(6));
   useKeyPress('8', () => step(7));
   useKeyPress('9', () => step(8));
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (currentRowIndex === data.length - 1) {
+        document.getElementById('end-row')?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'start'
+        });
+      } else if (currentRowIndex < 12) {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      } else {
+        document.getElementById('scroll-row')?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'start'
+        });
+      }
+    }, 50);
+    return () => clearInterval(interval);
+  });
 
   if (imageSrc !== null) {
     return (
@@ -275,6 +302,8 @@ function Ranking({
                 key={row.original.userId}
                 transition={spring}
                 layout
+                {...(ind === scrollRowIndex ? { id: 'scroll-row' } : {})}
+                {...(ind === data.length - 1 ? { id: 'end-row' } : {})}
               >
                 {row.getVisibleCells().map((cell) => {
                   if (

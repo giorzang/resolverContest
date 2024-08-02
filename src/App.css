@@ -3,6 +3,10 @@ html, body {
   height: 100%;
 }
 
+body {
+  overscroll-behavior-y: none;
+}
+
 #root, .App {
   height: 100%;
 }
@@ -11,6 +15,12 @@ img {
   display: block;
   height: auto;
   width: 100%;
+}
+
+.ranking-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 99999;
 }
 
 .ranking-table th, .ranking-table tr, .ranking-table td {

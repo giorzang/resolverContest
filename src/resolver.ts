@@ -258,6 +258,7 @@ export function useResolver({
 }): {
   columns: ColumnDef<UserRow>[];
   data: UserRow[];
+  currentRowIndex: number;
   markedUserId: number;
   markedProblemId: number;
   imageSrc: string | null;
@@ -476,7 +477,6 @@ export function useResolver({
           markedProblemId: -1,
           nextSubmissionId: -1
         });
-        console.log('aaaaaaaaaaaaaa');
         return true;
       }
 
@@ -583,6 +583,7 @@ export function useResolver({
   return {
     columns,
     data,
+    currentRowIndex: state.currentRowIndex,
     markedUserId: state.markedUserId,
     markedProblemId: state.markedProblemId,
     imageSrc: state.imageSrc,
