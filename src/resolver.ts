@@ -158,7 +158,7 @@ function calculatePenalty(user: InternalUser, submissionById: SubmissionById) {
   }
 
   return (
-    submissionById[user.lastAlteringScoreSubmissionId].time + 300 * incorrect
+    submissionById[user.lastAlteringScoreSubmissionId].time + 300 * incorrect // '1200' for ICPC, '300' for VNOJ
   );
 }
 
@@ -210,7 +210,7 @@ function resolvePendingSubmission({
     submissionId
   );
 
-  user.penalty = calculatePenalty(user, submissionById);
+  user.penalty += calculatePenalty(user, submissionById); // '=' for VNOJ, '+=' for ICPC
 
   setState({ ...state, markedProblemId: -1, nextSubmissionId: -1 });
 }
