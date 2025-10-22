@@ -156,7 +156,8 @@ function calculatePenalty(user: InternalUser, submissionById: SubmissionById) { 
     incorrect += user.submissionIdsByProblemId[problemId as any].filter(
       (submissionId) => submissionId < last
     ).length;
-    total_penalty += submissionById[last].time + 300 * incorrect
+
+    total_penalty += submissionById[last].time + 1200 * incorrect
   }
 
   return (
