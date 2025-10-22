@@ -1,0 +1,2799 @@
+{
+  "users": [
+    {
+      "userId": 3,
+      "username": "icpcpka25_team01",
+      "fullName": "LastDance"
+    },
+    {
+      "userId": 4,
+      "username": "icpcpka25_team02",
+      "fullName": "Silver Scrapes"
+    },
+    {
+      "userId": 5,
+      "username": "icpcpka25_team03",
+      "fullName": "CCC"
+    },
+    {
+      "userId": 6,
+      "username": "icpcpka25_team04",
+      "fullName": "Bánh cũ vị xưa"
+    },
+    {
+      "userId": 7,
+      "username": "icpcpka25_team05",
+      "fullName": "VJCTORY"
+    },
+    {
+      "userId": 8,
+      "username": "icpcpka25_team06",
+      "fullName": "UFO"
+    },
+    {
+      "userId": 9,
+      "username": "icpcpka25_team07",
+      "fullName": "UIO"
+    },
+    {
+      "userId": 10,
+      "username": "icpcpka25_team08",
+      "fullName": "Hello World"
+    },
+    {
+      "userId": 11,
+      "username": "icpcpka25_team09",
+      "fullName": "Unbeatable Conquerer"
+    },
+    {
+      "userId": 12,
+      "username": "icpcpka25_team10",
+      "fullName": "EEE"
+    },
+    {
+      "userId": 13,
+      "username": "icpcpka25_team11",
+      "fullName": "ADQ"
+    },
+    {
+      "userId": 14,
+      "username": "icpcpka25_team12",
+      "fullName": "LAT"
+    },
+    {
+      "userId": 15,
+      "username": "icpcpka25_team13",
+      "fullName": "Thuần Brute Force"
+    },
+    {
+      "userId": 16,
+      "username": "icpcpka25_team14",
+      "fullName": "Monkey Dev"
+    },
+    {
+      "userId": 17,
+      "username": "icpcpka25_team15",
+      "fullName": "Cưỡi Ngựa Xem Hoa"
+    },
+    {
+      "userId": 18,
+      "username": "icpcpka25_team16",
+      "fullName": "UUU"
+    },
+    {
+      "userId": 19,
+      "username": "icpcpka25_team17",
+      "fullName": "CTS"
+    },
+    {
+      "userId": 20,
+      "username": "icpcpka25_team18",
+      "fullName": "MiCayCapDo1"
+    },
+    {
+      "userId": 21,
+      "username": "icpcpka25_team19",
+      "fullName": "Matchalatte"
+    },
+    {
+      "userId": 22,
+      "username": "icpcpka25_team20",
+      "fullName": "KyLua"
+    },
+    {
+      "userId": 23,
+      "username": "icpcpka25_team21",
+      "fullName": "Thichkechan"
+    },
+    {
+      "userId": 24,
+      "username": "icpcpka25_team22",
+      "fullName": "NoLEEE"
+    }
+  ],
+  "problems": [
+    {
+      "problemId": 12,
+      "name": "A. Square – Cô Q và sở thích đếm hình vuông",
+      "points": 1
+    },
+    {
+      "problemId": 13,
+      "name": "B. Subset – Cô Q và tập hợp của những số chia hết",
+      "points": 1
+    },
+    {
+      "problemId": 14,
+      "name": "C. Fractal of Bắc Ninh - Cô Q và vẻ đẹp của sự nhân bản",
+      "points": 1
+    },
+    {
+      "problemId": 15,
+      "name": "D. The Lucky Ticket - Vé số may mắn của cô Q",
+      "points": 1
+    },
+    {
+      "problemId": 16,
+      "name": "E. Critical Threshold - Ngưỡng tới hạn vật liệu của cô Q",
+      "points": 1
+    },
+    {
+      "problemId": 17,
+      "name": "F. Palindrome - Cô Q và vẻ đẹp của sự đối xứng",
+      "points": 1
+    },
+    {
+      "problemId": 18,
+      "name": "G. Travel – Cô Q và những chuyến xe du lịch",
+      "points": 1
+    },
+    {
+      "problemId": 19,
+      "name": "H. CNN Lab of Cô Q",
+      "points": 1
+    },
+    {
+      "problemId": 20,
+      "name": "I. Robot Q – Robot của chị Q",
+      "points": 1
+    },
+    {
+      "problemId": 21,
+      "name": "J. Kbonacci – Cô Q và biến thể K-bonacci",
+      "points": 1
+    },
+    {
+      "problemId": 22,
+      "name": "K. Prime - Cô Q, một và duy nhất",
+      "points": 1
+    },
+    {
+      "problemId": 23,
+      "name": "L. Another Palindrome - Cô Q và truy vấn xâu đối xứng",
+      "points": 1
+    },
+    {
+      "problemId": 24,
+      "name": "M. Hospital - Bệnh viện của thành phố Q",
+      "points": 1
+    },
+    {
+      "problemId": 25,
+      "name": "N. Intersection Over Union - Chỉ số IOU",
+      "points": 1
+    }
+  ],
+  "submissions": [
+    {
+      "submissionId": 108,
+      "problemId": 22,
+      "userId": 3,
+      "time": 85.393192,
+      "points": 1.0
+    },
+    {
+      "submissionId": 123,
+      "problemId": 17,
+      "userId": 3,
+      "time": 357.025305,
+      "points": 1.0
+    },
+    {
+      "submissionId": 127,
+      "problemId": 20,
+      "userId": 3,
+      "time": 413.96122,
+      "points": 1.0
+    },
+    {
+      "submissionId": 137,
+      "problemId": 13,
+      "userId": 3,
+      "time": 519.068216,
+      "points": 1.0
+    },
+    {
+      "submissionId": 196,
+      "problemId": 12,
+      "userId": 3,
+      "time": 2073.975117,
+      "points": 1.0
+    },
+    {
+      "submissionId": 210,
+      "problemId": 15,
+      "userId": 3,
+      "time": 2566.467607,
+      "points": 1.0
+    },
+    {
+      "submissionId": 234,
+      "problemId": 19,
+      "userId": 3,
+      "time": 3198.201204,
+      "points": 1.0
+    },
+    {
+      "submissionId": 240,
+      "problemId": 24,
+      "userId": 3,
+      "time": 3646.19936,
+      "points": 1.0
+    },
+    {
+      "submissionId": 267,
+      "problemId": 16,
+      "userId": 3,
+      "time": 5222.660182,
+      "points": 0.0
+    },
+    {
+      "submissionId": 336,
+      "problemId": 23,
+      "userId": 3,
+      "time": 8362.882372,
+      "points": 1.0
+    },
+    {
+      "submissionId": 354,
+      "problemId": 16,
+      "userId": 3,
+      "time": 9518.358465,
+      "points": 0.0
+    },
+    {
+      "submissionId": 355,
+      "problemId": 16,
+      "userId": 3,
+      "time": 9548.350679,
+      "points": 1.0
+    },
+    {
+      "submissionId": 369,
+      "problemId": 14,
+      "userId": 3,
+      "time": 10590.49911,
+      "points": 1.0
+    },
+    {
+      "submissionId": 419,
+      "problemId": 21,
+      "userId": 3,
+      "time": 14593.141957,
+      "points": 1.0
+    },
+    {
+      "submissionId": 441,
+      "problemId": 25,
+      "userId": 3,
+      "time": 15371.189315,
+      "points": 0.0
+    },
+    {
+      "submissionId": 452,
+      "problemId": 25,
+      "userId": 3,
+      "time": 15913.242109,
+      "points": 0.0
+    },
+    {
+      "submissionId": 458,
+      "problemId": 25,
+      "userId": 3,
+      "time": 16058.724111,
+      "points": 1.0
+    },
+    {
+      "submissionId": 493,
+      "problemId": 18,
+      "userId": 3,
+      "time": 17667.489116,
+      "points": 0.0
+    },
+    {
+      "submissionId": 112,
+      "problemId": 20,
+      "userId": 4,
+      "time": 163.80154,
+      "points": 1.0
+    },
+    {
+      "submissionId": 120,
+      "problemId": 22,
+      "userId": 4,
+      "time": 326.038849,
+      "points": 0.0
+    },
+    {
+      "submissionId": 129,
+      "problemId": 22,
+      "userId": 4,
+      "time": 417.719701,
+      "points": 0.0
+    },
+    {
+      "submissionId": 135,
+      "problemId": 22,
+      "userId": 4,
+      "time": 513.835197,
+      "points": 1.0
+    },
+    {
+      "submissionId": 193,
+      "problemId": 13,
+      "userId": 4,
+      "time": 1988.469426,
+      "points": 1.0
+    },
+    {
+      "submissionId": 195,
+      "problemId": 15,
+      "userId": 4,
+      "time": 2038.578278,
+      "points": 1.0
+    },
+    {
+      "submissionId": 220,
+      "problemId": 17,
+      "userId": 4,
+      "time": 2868.944339,
+      "points": 0.0
+    },
+    {
+      "submissionId": 232,
+      "problemId": 17,
+      "userId": 4,
+      "time": 3142.72984,
+      "points": 1.0
+    },
+    {
+      "submissionId": 260,
+      "problemId": 19,
+      "userId": 4,
+      "time": 4795.968872,
+      "points": 1.0
+    },
+    {
+      "submissionId": 275,
+      "problemId": 24,
+      "userId": 4,
+      "time": 5494.019407,
+      "points": 0.0
+    },
+    {
+      "submissionId": 286,
+      "problemId": 24,
+      "userId": 4,
+      "time": 6144.418719,
+      "points": 0.0
+    },
+    {
+      "submissionId": 311,
+      "problemId": 16,
+      "userId": 4,
+      "time": 6886.101713,
+      "points": 0.0
+    },
+    {
+      "submissionId": 315,
+      "problemId": 24,
+      "userId": 4,
+      "time": 7047.44179,
+      "points": 0.0
+    },
+    {
+      "submissionId": 325,
+      "problemId": 16,
+      "userId": 4,
+      "time": 7845.241393,
+      "points": 0.0
+    },
+    {
+      "submissionId": 333,
+      "problemId": 16,
+      "userId": 4,
+      "time": 8211.469824,
+      "points": 0.0
+    },
+    {
+      "submissionId": 379,
+      "problemId": 16,
+      "userId": 4,
+      "time": 10995.97137,
+      "points": 0.0
+    },
+    {
+      "submissionId": 380,
+      "problemId": 16,
+      "userId": 4,
+      "time": 11101.632365,
+      "points": 0.0
+    },
+    {
+      "submissionId": 431,
+      "problemId": 14,
+      "userId": 4,
+      "time": 15025.2223,
+      "points": 1.0
+    },
+    {
+      "submissionId": 439,
+      "problemId": 21,
+      "userId": 4,
+      "time": 15304.920862,
+      "points": 0.0
+    },
+    {
+      "submissionId": 446,
+      "problemId": 21,
+      "userId": 4,
+      "time": 15534.611735,
+      "points": 0.0
+    },
+    {
+      "submissionId": 450,
+      "problemId": 24,
+      "userId": 4,
+      "time": 15886.75099,
+      "points": 1.0
+    },
+    {
+      "submissionId": 463,
+      "problemId": 16,
+      "userId": 4,
+      "time": 16259.810212,
+      "points": 0.0
+    },
+    {
+      "submissionId": 469,
+      "problemId": 16,
+      "userId": 4,
+      "time": 16582.145217,
+      "points": 0.0
+    },
+    {
+      "submissionId": 473,
+      "problemId": 16,
+      "userId": 4,
+      "time": 16986.442853,
+      "points": 0.0
+    },
+    {
+      "submissionId": 476,
+      "problemId": 16,
+      "userId": 4,
+      "time": 17039.798618,
+      "points": 1.0
+    },
+    {
+      "submissionId": 117,
+      "problemId": 22,
+      "userId": 5,
+      "time": 265.134924,
+      "points": 1.0
+    },
+    {
+      "submissionId": 176,
+      "problemId": 13,
+      "userId": 5,
+      "time": 1480.66387,
+      "points": 1.0
+    },
+    {
+      "submissionId": 211,
+      "problemId": 15,
+      "userId": 5,
+      "time": 2580.03387,
+      "points": 0.0
+    },
+    {
+      "submissionId": 238,
+      "problemId": 17,
+      "userId": 5,
+      "time": 3446.428919,
+      "points": 1.0
+    },
+    {
+      "submissionId": 245,
+      "problemId": 20,
+      "userId": 5,
+      "time": 4074.44733,
+      "points": 1.0
+    },
+    {
+      "submissionId": 269,
+      "problemId": 23,
+      "userId": 5,
+      "time": 5331.640835,
+      "points": 0.0
+    },
+    {
+      "submissionId": 303,
+      "problemId": 15,
+      "userId": 5,
+      "time": 6612.805117,
+      "points": 0.0
+    },
+    {
+      "submissionId": 305,
+      "problemId": 15,
+      "userId": 5,
+      "time": 6679.557675,
+      "points": 1.0
+    },
+    {
+      "submissionId": 342,
+      "problemId": 12,
+      "userId": 5,
+      "time": 8798.364707,
+      "points": 0.0
+    },
+    {
+      "submissionId": 383,
+      "problemId": 19,
+      "userId": 5,
+      "time": 12084.452043,
+      "points": 1.0
+    },
+    {
+      "submissionId": 406,
+      "problemId": 12,
+      "userId": 5,
+      "time": 14038.295818,
+      "points": 0.0
+    },
+    {
+      "submissionId": 456,
+      "problemId": 12,
+      "userId": 5,
+      "time": 16031.587217,
+      "points": 0.0
+    },
+    {
+      "submissionId": 467,
+      "problemId": 12,
+      "userId": 5,
+      "time": 16541.261707,
+      "points": 0.0
+    },
+    {
+      "submissionId": 491,
+      "problemId": 12,
+      "userId": 5,
+      "time": 17590.332457,
+      "points": 0.0
+    },
+    {
+      "submissionId": 110,
+      "problemId": 22,
+      "userId": 6,
+      "time": 125.229755,
+      "points": 1.0
+    },
+    {
+      "submissionId": 143,
+      "problemId": 17,
+      "userId": 6,
+      "time": 604.172453,
+      "points": 0.0
+    },
+    {
+      "submissionId": 156,
+      "problemId": 17,
+      "userId": 6,
+      "time": 921.078795,
+      "points": 0.0
+    },
+    {
+      "submissionId": 158,
+      "problemId": 17,
+      "userId": 6,
+      "time": 984.886095,
+      "points": 0.0
+    },
+    {
+      "submissionId": 194,
+      "problemId": 17,
+      "userId": 6,
+      "time": 1995.358744,
+      "points": 0.0
+    },
+    {
+      "submissionId": 231,
+      "problemId": 20,
+      "userId": 6,
+      "time": 3068.415937,
+      "points": 0.0
+    },
+    {
+      "submissionId": 233,
+      "problemId": 17,
+      "userId": 6,
+      "time": 3170.119506,
+      "points": 0.0
+    },
+    {
+      "submissionId": 252,
+      "problemId": 17,
+      "userId": 6,
+      "time": 4435.145156,
+      "points": 0.0
+    },
+    {
+      "submissionId": 255,
+      "problemId": 17,
+      "userId": 6,
+      "time": 4528.657568,
+      "points": 0.0
+    },
+    {
+      "submissionId": 259,
+      "problemId": 17,
+      "userId": 6,
+      "time": 4777.951787,
+      "points": 0.0
+    },
+    {
+      "submissionId": 268,
+      "problemId": 17,
+      "userId": 6,
+      "time": 5254.844694,
+      "points": 0.0
+    },
+    {
+      "submissionId": 372,
+      "problemId": 17,
+      "userId": 6,
+      "time": 10743.028929,
+      "points": 0.0
+    },
+    {
+      "submissionId": 375,
+      "problemId": 17,
+      "userId": 6,
+      "time": 10850.793789,
+      "points": 0.0
+    },
+    {
+      "submissionId": 378,
+      "problemId": 17,
+      "userId": 6,
+      "time": 10966.704959,
+      "points": 0.0
+    },
+    {
+      "submissionId": 398,
+      "problemId": 17,
+      "userId": 6,
+      "time": 13838.265515,
+      "points": 0.0
+    },
+    {
+      "submissionId": 400,
+      "problemId": 12,
+      "userId": 6,
+      "time": 13888.578668,
+      "points": 0.0
+    },
+    {
+      "submissionId": 403,
+      "problemId": 13,
+      "userId": 6,
+      "time": 13955.3452,
+      "points": 0.0
+    },
+    {
+      "submissionId": 405,
+      "problemId": 20,
+      "userId": 6,
+      "time": 14009.72258,
+      "points": 1.0
+    },
+    {
+      "submissionId": 407,
+      "problemId": 15,
+      "userId": 6,
+      "time": 14064.038555,
+      "points": 0.0
+    },
+    {
+      "submissionId": 412,
+      "problemId": 15,
+      "userId": 6,
+      "time": 14250.535113,
+      "points": 0.0
+    },
+    {
+      "submissionId": 413,
+      "problemId": 15,
+      "userId": 6,
+      "time": 14345.871053,
+      "points": 0.0
+    },
+    {
+      "submissionId": 421,
+      "problemId": 15,
+      "userId": 6,
+      "time": 14603.309185,
+      "points": 1.0
+    },
+    {
+      "submissionId": 424,
+      "problemId": 12,
+      "userId": 6,
+      "time": 14735.169612,
+      "points": 0.0
+    },
+    {
+      "submissionId": 430,
+      "problemId": 12,
+      "userId": 6,
+      "time": 14974.773877,
+      "points": 1.0
+    },
+    {
+      "submissionId": 438,
+      "problemId": 14,
+      "userId": 6,
+      "time": 15165.697858,
+      "points": 1.0
+    },
+    {
+      "submissionId": 440,
+      "problemId": 13,
+      "userId": 6,
+      "time": 15314.45318,
+      "points": 1.0
+    },
+    {
+      "submissionId": 445,
+      "problemId": 17,
+      "userId": 6,
+      "time": 15435.122998,
+      "points": 1.0
+    },
+    {
+      "submissionId": 451,
+      "problemId": 19,
+      "userId": 6,
+      "time": 15911.18259,
+      "points": 1.0
+    },
+    {
+      "submissionId": 472,
+      "problemId": 24,
+      "userId": 6,
+      "time": 16976.357706,
+      "points": 1.0
+    },
+    {
+      "submissionId": 504,
+      "problemId": 21,
+      "userId": 6,
+      "time": 17916.252696,
+      "points": 1.0
+    },
+    {
+      "submissionId": 114,
+      "problemId": 13,
+      "userId": 7,
+      "time": 204.291173,
+      "points": 0.0
+    },
+    {
+      "submissionId": 118,
+      "problemId": 13,
+      "userId": 7,
+      "time": 287.715506,
+      "points": 0.0
+    },
+    {
+      "submissionId": 132,
+      "problemId": 22,
+      "userId": 7,
+      "time": 447.148972,
+      "points": 0.0
+    },
+    {
+      "submissionId": 136,
+      "problemId": 22,
+      "userId": 7,
+      "time": 518.15304,
+      "points": 0.0
+    },
+    {
+      "submissionId": 144,
+      "problemId": 22,
+      "userId": 7,
+      "time": 636.493977,
+      "points": 0.0
+    },
+    {
+      "submissionId": 147,
+      "problemId": 22,
+      "userId": 7,
+      "time": 739.020742,
+      "points": 1.0
+    },
+    {
+      "submissionId": 148,
+      "problemId": 13,
+      "userId": 7,
+      "time": 760.142931,
+      "points": 0.0
+    },
+    {
+      "submissionId": 151,
+      "problemId": 13,
+      "userId": 7,
+      "time": 852.09976,
+      "points": 0.0
+    },
+    {
+      "submissionId": 187,
+      "problemId": 20,
+      "userId": 7,
+      "time": 1814.346001,
+      "points": 1.0
+    },
+    {
+      "submissionId": 227,
+      "problemId": 15,
+      "userId": 7,
+      "time": 2938.749446,
+      "points": 0.0
+    },
+    {
+      "submissionId": 236,
+      "problemId": 15,
+      "userId": 7,
+      "time": 3338.39292,
+      "points": 0.0
+    },
+    {
+      "submissionId": 246,
+      "problemId": 17,
+      "userId": 7,
+      "time": 4104.602718,
+      "points": 1.0
+    },
+    {
+      "submissionId": 271,
+      "problemId": 15,
+      "userId": 7,
+      "time": 5354.533949,
+      "points": 0.0
+    },
+    {
+      "submissionId": 273,
+      "problemId": 15,
+      "userId": 7,
+      "time": 5457.136356,
+      "points": 0.0
+    },
+    {
+      "submissionId": 280,
+      "problemId": 15,
+      "userId": 7,
+      "time": 5768.983298,
+      "points": 0.0
+    },
+    {
+      "submissionId": 281,
+      "problemId": 15,
+      "userId": 7,
+      "time": 5787.7792,
+      "points": 0.0
+    },
+    {
+      "submissionId": 295,
+      "problemId": 15,
+      "userId": 7,
+      "time": 6277.625427,
+      "points": 0.0
+    },
+    {
+      "submissionId": 299,
+      "problemId": 15,
+      "userId": 7,
+      "time": 6450.087953,
+      "points": 0.0
+    },
+    {
+      "submissionId": 328,
+      "problemId": 15,
+      "userId": 7,
+      "time": 8129.414118,
+      "points": 0.0
+    },
+    {
+      "submissionId": 329,
+      "problemId": 15,
+      "userId": 7,
+      "time": 8179.231439,
+      "points": 0.0
+    },
+    {
+      "submissionId": 334,
+      "problemId": 15,
+      "userId": 7,
+      "time": 8237.679669,
+      "points": 1.0
+    },
+    {
+      "submissionId": 437,
+      "problemId": 13,
+      "userId": 7,
+      "time": 15164.430301,
+      "points": 0.0
+    },
+    {
+      "submissionId": 471,
+      "problemId": 13,
+      "userId": 7,
+      "time": 16951.887879,
+      "points": 0.0
+    },
+    {
+      "submissionId": 152,
+      "problemId": 22,
+      "userId": 8,
+      "time": 862.262106,
+      "points": 1.0
+    },
+    {
+      "submissionId": 182,
+      "problemId": 13,
+      "userId": 8,
+      "time": 1720.784192,
+      "points": 0.0
+    },
+    {
+      "submissionId": 221,
+      "problemId": 15,
+      "userId": 8,
+      "time": 2871.675249,
+      "points": 0.0
+    },
+    {
+      "submissionId": 235,
+      "problemId": 15,
+      "userId": 8,
+      "time": 3324.210409,
+      "points": 1.0
+    },
+    {
+      "submissionId": 270,
+      "problemId": 20,
+      "userId": 8,
+      "time": 5348.168891,
+      "points": 1.0
+    },
+    {
+      "submissionId": 332,
+      "problemId": 23,
+      "userId": 8,
+      "time": 8195.13221,
+      "points": 0.0
+    },
+    {
+      "submissionId": 343,
+      "problemId": 17,
+      "userId": 8,
+      "time": 8885.406946,
+      "points": 0.0
+    },
+    {
+      "submissionId": 381,
+      "problemId": 17,
+      "userId": 8,
+      "time": 11502.659257,
+      "points": 0.0
+    },
+    {
+      "submissionId": 429,
+      "problemId": 17,
+      "userId": 8,
+      "time": 14933.240689,
+      "points": 0.0
+    },
+    {
+      "submissionId": 443,
+      "problemId": 23,
+      "userId": 8,
+      "time": 15393.711472,
+      "points": 0.0
+    },
+    {
+      "submissionId": 459,
+      "problemId": 23,
+      "userId": 8,
+      "time": 16060.168204,
+      "points": 0.0
+    },
+    {
+      "submissionId": 482,
+      "problemId": 23,
+      "userId": 8,
+      "time": 17335.020663,
+      "points": 0.0
+    },
+    {
+      "submissionId": 138,
+      "problemId": 22,
+      "userId": 9,
+      "time": 525.212102,
+      "points": 0.0
+    },
+    {
+      "submissionId": 208,
+      "problemId": 17,
+      "userId": 9,
+      "time": 2435.24203,
+      "points": 0.0
+    },
+    {
+      "submissionId": 225,
+      "problemId": 22,
+      "userId": 9,
+      "time": 2930.24648,
+      "points": 1.0
+    },
+    {
+      "submissionId": 228,
+      "problemId": 17,
+      "userId": 9,
+      "time": 2995.808638,
+      "points": 0.0
+    },
+    {
+      "submissionId": 265,
+      "problemId": 15,
+      "userId": 9,
+      "time": 5165.258544,
+      "points": 0.0
+    },
+    {
+      "submissionId": 288,
+      "problemId": 15,
+      "userId": 9,
+      "time": 6233.69649,
+      "points": 0.0
+    },
+    {
+      "submissionId": 302,
+      "problemId": 15,
+      "userId": 9,
+      "time": 6587.96474,
+      "points": 1.0
+    },
+    {
+      "submissionId": 308,
+      "problemId": 17,
+      "userId": 9,
+      "time": 6792.026622,
+      "points": 0.0
+    },
+    {
+      "submissionId": 366,
+      "problemId": 23,
+      "userId": 9,
+      "time": 10347.097818,
+      "points": 0.0
+    },
+    {
+      "submissionId": 384,
+      "problemId": 20,
+      "userId": 9,
+      "time": 12145.814486,
+      "points": 0.0
+    },
+    {
+      "submissionId": 388,
+      "problemId": 20,
+      "userId": 9,
+      "time": 12580.131707,
+      "points": 1.0
+    },
+    {
+      "submissionId": 416,
+      "problemId": 21,
+      "userId": 9,
+      "time": 14502.596082,
+      "points": 0.0
+    },
+    {
+      "submissionId": 420,
+      "problemId": 21,
+      "userId": 9,
+      "time": 14602.611168,
+      "points": 0.0
+    },
+    {
+      "submissionId": 244,
+      "problemId": 20,
+      "userId": 10,
+      "time": 3837.675476,
+      "points": 1.0
+    },
+    {
+      "submissionId": 301,
+      "problemId": 22,
+      "userId": 10,
+      "time": 6580.339434,
+      "points": 0.0
+    },
+    {
+      "submissionId": 306,
+      "problemId": 22,
+      "userId": 10,
+      "time": 6693.466668,
+      "points": 0.0
+    },
+    {
+      "submissionId": 323,
+      "problemId": 22,
+      "userId": 10,
+      "time": 7759.564322,
+      "points": 0.0
+    },
+    {
+      "submissionId": 358,
+      "problemId": 22,
+      "userId": 10,
+      "time": 9865.13755,
+      "points": 0.0
+    },
+    {
+      "submissionId": 360,
+      "problemId": 22,
+      "userId": 10,
+      "time": 9923.703088,
+      "points": 0.0
+    },
+    {
+      "submissionId": 362,
+      "problemId": 22,
+      "userId": 10,
+      "time": 10017.949774,
+      "points": 0.0
+    },
+    {
+      "submissionId": 410,
+      "problemId": 17,
+      "userId": 10,
+      "time": 14132.901963,
+      "points": 1.0
+    },
+    {
+      "submissionId": 477,
+      "problemId": 15,
+      "userId": 10,
+      "time": 17115.2488,
+      "points": 0.0
+    },
+    {
+      "submissionId": 484,
+      "problemId": 22,
+      "userId": 10,
+      "time": 17374.842574,
+      "points": 0.0
+    },
+    {
+      "submissionId": 487,
+      "problemId": 22,
+      "userId": 10,
+      "time": 17481.809249,
+      "points": 0.0
+    },
+    {
+      "submissionId": 497,
+      "problemId": 22,
+      "userId": 10,
+      "time": 17749.516668,
+      "points": 0.0
+    },
+    {
+      "submissionId": 500,
+      "problemId": 15,
+      "userId": 10,
+      "time": 17857.764202,
+      "points": 0.0
+    },
+    {
+      "submissionId": 507,
+      "problemId": 22,
+      "userId": 10,
+      "time": 17959.591376,
+      "points": 0.0
+    },
+    {
+      "submissionId": 171,
+      "problemId": 22,
+      "userId": 11,
+      "time": 1411.392426,
+      "points": 1.0
+    },
+    {
+      "submissionId": 239,
+      "problemId": 17,
+      "userId": 11,
+      "time": 3614.304173,
+      "points": 0.0
+    },
+    {
+      "submissionId": 241,
+      "problemId": 17,
+      "userId": 11,
+      "time": 3654.830009,
+      "points": 0.0
+    },
+    {
+      "submissionId": 294,
+      "problemId": 15,
+      "userId": 11,
+      "time": 6273.882372,
+      "points": 0.0
+    },
+    {
+      "submissionId": 300,
+      "problemId": 15,
+      "userId": 11,
+      "time": 6459.097713,
+      "points": 0.0
+    },
+    {
+      "submissionId": 309,
+      "problemId": 15,
+      "userId": 11,
+      "time": 6825.167755,
+      "points": 0.0
+    },
+    {
+      "submissionId": 318,
+      "problemId": 15,
+      "userId": 11,
+      "time": 7274.627931,
+      "points": 0.0
+    },
+    {
+      "submissionId": 319,
+      "problemId": 15,
+      "userId": 11,
+      "time": 7313.95963,
+      "points": 0.0
+    },
+    {
+      "submissionId": 320,
+      "problemId": 15,
+      "userId": 11,
+      "time": 7339.855722,
+      "points": 0.0
+    },
+    {
+      "submissionId": 321,
+      "problemId": 15,
+      "userId": 11,
+      "time": 7565.644891,
+      "points": 0.0
+    },
+    {
+      "submissionId": 353,
+      "problemId": 15,
+      "userId": 11,
+      "time": 9405.779383,
+      "points": 0.0
+    },
+    {
+      "submissionId": 370,
+      "problemId": 17,
+      "userId": 11,
+      "time": 10705.021028,
+      "points": 0.0
+    },
+    {
+      "submissionId": 371,
+      "problemId": 17,
+      "userId": 11,
+      "time": 10737.305105,
+      "points": 0.0
+    },
+    {
+      "submissionId": 394,
+      "problemId": 15,
+      "userId": 11,
+      "time": 13540.428057,
+      "points": 0.0
+    },
+    {
+      "submissionId": 395,
+      "problemId": 15,
+      "userId": 11,
+      "time": 13560.219933,
+      "points": 0.0
+    },
+    {
+      "submissionId": 434,
+      "problemId": 15,
+      "userId": 11,
+      "time": 15085.338034,
+      "points": 0.0
+    },
+    {
+      "submissionId": 436,
+      "problemId": 15,
+      "userId": 11,
+      "time": 15099.221169,
+      "points": 0.0
+    },
+    {
+      "submissionId": 159,
+      "problemId": 22,
+      "userId": 12,
+      "time": 1120.304197,
+      "points": 0.0
+    },
+    {
+      "submissionId": 161,
+      "problemId": 22,
+      "userId": 12,
+      "time": 1198.307621,
+      "points": 0.0
+    },
+    {
+      "submissionId": 175,
+      "problemId": 22,
+      "userId": 12,
+      "time": 1471.303191,
+      "points": 0.0
+    },
+    {
+      "submissionId": 183,
+      "problemId": 22,
+      "userId": 12,
+      "time": 1730.949868,
+      "points": 0.0
+    },
+    {
+      "submissionId": 185,
+      "problemId": 22,
+      "userId": 12,
+      "time": 1796.431563,
+      "points": 0.0
+    },
+    {
+      "submissionId": 199,
+      "problemId": 22,
+      "userId": 12,
+      "time": 2130.546253,
+      "points": 1.0
+    },
+    {
+      "submissionId": 344,
+      "problemId": 15,
+      "userId": 12,
+      "time": 8925.311371,
+      "points": 0.0
+    },
+    {
+      "submissionId": 359,
+      "problemId": 13,
+      "userId": 12,
+      "time": 9914.984524,
+      "points": 0.0
+    },
+    {
+      "submissionId": 390,
+      "problemId": 17,
+      "userId": 12,
+      "time": 13193.082061,
+      "points": 0.0
+    },
+    {
+      "submissionId": 391,
+      "problemId": 17,
+      "userId": 12,
+      "time": 13259.96819,
+      "points": 0.0
+    },
+    {
+      "submissionId": 414,
+      "problemId": 15,
+      "userId": 12,
+      "time": 14391.147288,
+      "points": 0.0
+    },
+    {
+      "submissionId": 448,
+      "problemId": 17,
+      "userId": 12,
+      "time": 15698.124215,
+      "points": 1.0
+    },
+    {
+      "submissionId": 140,
+      "problemId": 22,
+      "userId": 13,
+      "time": 553.084276,
+      "points": 1.0
+    },
+    {
+      "submissionId": 149,
+      "problemId": 20,
+      "userId": 13,
+      "time": 778.193455,
+      "points": 1.0
+    },
+    {
+      "submissionId": 164,
+      "problemId": 17,
+      "userId": 13,
+      "time": 1286.203723,
+      "points": 1.0
+    },
+    {
+      "submissionId": 178,
+      "problemId": 15,
+      "userId": 13,
+      "time": 1641.381786,
+      "points": 0.0
+    },
+    {
+      "submissionId": 181,
+      "problemId": 15,
+      "userId": 13,
+      "time": 1705.590005,
+      "points": 0.0
+    },
+    {
+      "submissionId": 186,
+      "problemId": 15,
+      "userId": 13,
+      "time": 1804.78869,
+      "points": 0.0
+    },
+    {
+      "submissionId": 191,
+      "problemId": 15,
+      "userId": 13,
+      "time": 1950.796178,
+      "points": 0.0
+    },
+    {
+      "submissionId": 203,
+      "problemId": 15,
+      "userId": 13,
+      "time": 2242.161763,
+      "points": 1.0
+    },
+    {
+      "submissionId": 346,
+      "problemId": 13,
+      "userId": 13,
+      "time": 9151.776302,
+      "points": 0.0
+    },
+    {
+      "submissionId": 352,
+      "problemId": 13,
+      "userId": 13,
+      "time": 9404.248166,
+      "points": 1.0
+    },
+    {
+      "submissionId": 361,
+      "problemId": 23,
+      "userId": 13,
+      "time": 9968.984475,
+      "points": 0.0
+    },
+    {
+      "submissionId": 363,
+      "problemId": 23,
+      "userId": 13,
+      "time": 10175.858882,
+      "points": 0.0
+    },
+    {
+      "submissionId": 367,
+      "problemId": 23,
+      "userId": 13,
+      "time": 10414.107337,
+      "points": 0.0
+    },
+    {
+      "submissionId": 387,
+      "problemId": 19,
+      "userId": 13,
+      "time": 12350.963586,
+      "points": 1.0
+    },
+    {
+      "submissionId": 401,
+      "problemId": 24,
+      "userId": 13,
+      "time": 13893.842803,
+      "points": 0.0
+    },
+    {
+      "submissionId": 415,
+      "problemId": 24,
+      "userId": 13,
+      "time": 14489.993346,
+      "points": 0.0
+    },
+    {
+      "submissionId": 432,
+      "problemId": 24,
+      "userId": 13,
+      "time": 15030.39127,
+      "points": 1.0
+    },
+    {
+      "submissionId": 145,
+      "problemId": 22,
+      "userId": 14,
+      "time": 668.319762,
+      "points": 1.0
+    },
+    {
+      "submissionId": 291,
+      "problemId": 17,
+      "userId": 14,
+      "time": 6253.090292,
+      "points": 0.0
+    },
+    {
+      "submissionId": 396,
+      "problemId": 20,
+      "userId": 14,
+      "time": 13827.428227,
+      "points": 0.0
+    },
+    {
+      "submissionId": 402,
+      "problemId": 20,
+      "userId": 14,
+      "time": 13941.958452,
+      "points": 0.0
+    },
+    {
+      "submissionId": 107,
+      "problemId": 22,
+      "userId": 15,
+      "time": 84.766219,
+      "points": 0.0
+    },
+    {
+      "submissionId": 111,
+      "problemId": 22,
+      "userId": 15,
+      "time": 154.195589,
+      "points": 1.0
+    },
+    {
+      "submissionId": 128,
+      "problemId": 20,
+      "userId": 15,
+      "time": 415.412428,
+      "points": 1.0
+    },
+    {
+      "submissionId": 197,
+      "problemId": 17,
+      "userId": 15,
+      "time": 2114.539444,
+      "points": 0.0
+    },
+    {
+      "submissionId": 204,
+      "problemId": 17,
+      "userId": 15,
+      "time": 2247.418237,
+      "points": 1.0
+    },
+    {
+      "submissionId": 226,
+      "problemId": 13,
+      "userId": 15,
+      "time": 2934.816793,
+      "points": 1.0
+    },
+    {
+      "submissionId": 249,
+      "problemId": 12,
+      "userId": 15,
+      "time": 4174.059892,
+      "points": 1.0
+    },
+    {
+      "submissionId": 253,
+      "problemId": 15,
+      "userId": 15,
+      "time": 4446.82259,
+      "points": 1.0
+    },
+    {
+      "submissionId": 262,
+      "problemId": 19,
+      "userId": 15,
+      "time": 4921.901252,
+      "points": 1.0
+    },
+    {
+      "submissionId": 276,
+      "problemId": 16,
+      "userId": 15,
+      "time": 5542.478297,
+      "points": 1.0
+    },
+    {
+      "submissionId": 296,
+      "problemId": 24,
+      "userId": 15,
+      "time": 6371.530044,
+      "points": 1.0
+    },
+    {
+      "submissionId": 364,
+      "problemId": 14,
+      "userId": 15,
+      "time": 10229.261758,
+      "points": 0.0
+    },
+    {
+      "submissionId": 365,
+      "problemId": 14,
+      "userId": 15,
+      "time": 10291.898953,
+      "points": 1.0
+    },
+    {
+      "submissionId": 389,
+      "problemId": 21,
+      "userId": 15,
+      "time": 12665.177949,
+      "points": 1.0
+    },
+    {
+      "submissionId": 399,
+      "problemId": 25,
+      "userId": 15,
+      "time": 13866.518522,
+      "points": 0.0
+    },
+    {
+      "submissionId": 408,
+      "problemId": 25,
+      "userId": 15,
+      "time": 14094.092671,
+      "points": 1.0
+    },
+    {
+      "submissionId": 454,
+      "problemId": 18,
+      "userId": 15,
+      "time": 16010.131223,
+      "points": 0.0
+    },
+    {
+      "submissionId": 485,
+      "problemId": 18,
+      "userId": 15,
+      "time": 17419.11167,
+      "points": 0.0
+    },
+    {
+      "submissionId": 172,
+      "problemId": 22,
+      "userId": 16,
+      "time": 1423.479857,
+      "points": 0.0
+    },
+    {
+      "submissionId": 279,
+      "problemId": 22,
+      "userId": 16,
+      "time": 5673.500374,
+      "points": 1.0
+    },
+    {
+      "submissionId": 349,
+      "problemId": 23,
+      "userId": 16,
+      "time": 9251.07799,
+      "points": 0.0
+    },
+    {
+      "submissionId": 373,
+      "problemId": 17,
+      "userId": 16,
+      "time": 10817.517566,
+      "points": 0.0
+    },
+    {
+      "submissionId": 447,
+      "problemId": 15,
+      "userId": 16,
+      "time": 15625.715273,
+      "points": 0.0
+    },
+    {
+      "submissionId": 116,
+      "problemId": 22,
+      "userId": 17,
+      "time": 233.4798,
+      "points": 0.0
+    },
+    {
+      "submissionId": 122,
+      "problemId": 22,
+      "userId": 17,
+      "time": 345.541625,
+      "points": 0.0
+    },
+    {
+      "submissionId": 131,
+      "problemId": 22,
+      "userId": 17,
+      "time": 441.765701,
+      "points": 0.0
+    },
+    {
+      "submissionId": 134,
+      "problemId": 22,
+      "userId": 17,
+      "time": 476.988316,
+      "points": 0.0
+    },
+    {
+      "submissionId": 141,
+      "problemId": 22,
+      "userId": 17,
+      "time": 592.989884,
+      "points": 0.0
+    },
+    {
+      "submissionId": 146,
+      "problemId": 22,
+      "userId": 17,
+      "time": 674.832471,
+      "points": 0.0
+    },
+    {
+      "submissionId": 154,
+      "problemId": 22,
+      "userId": 17,
+      "time": 883.928387,
+      "points": 1.0
+    },
+    {
+      "submissionId": 162,
+      "problemId": 17,
+      "userId": 17,
+      "time": 1202.543382,
+      "points": 0.0
+    },
+    {
+      "submissionId": 165,
+      "problemId": 17,
+      "userId": 17,
+      "time": 1295.295207,
+      "points": 0.0
+    },
+    {
+      "submissionId": 177,
+      "problemId": 17,
+      "userId": 17,
+      "time": 1622.794927,
+      "points": 0.0
+    },
+    {
+      "submissionId": 188,
+      "problemId": 17,
+      "userId": 17,
+      "time": 1829.894624,
+      "points": 0.0
+    },
+    {
+      "submissionId": 205,
+      "problemId": 17,
+      "userId": 17,
+      "time": 2277.157981,
+      "points": 0.0
+    },
+    {
+      "submissionId": 209,
+      "problemId": 17,
+      "userId": 17,
+      "time": 2495.972349,
+      "points": 0.0
+    },
+    {
+      "submissionId": 214,
+      "problemId": 17,
+      "userId": 17,
+      "time": 2737.083283,
+      "points": 0.0
+    },
+    {
+      "submissionId": 215,
+      "problemId": 17,
+      "userId": 17,
+      "time": 2820.284214,
+      "points": 1.0
+    },
+    {
+      "submissionId": 248,
+      "problemId": 20,
+      "userId": 17,
+      "time": 4137.199697,
+      "points": 0.0
+    },
+    {
+      "submissionId": 250,
+      "problemId": 20,
+      "userId": 17,
+      "time": 4271.475935,
+      "points": 0.0
+    },
+    {
+      "submissionId": 251,
+      "problemId": 20,
+      "userId": 17,
+      "time": 4414.145767,
+      "points": 0.0
+    },
+    {
+      "submissionId": 312,
+      "problemId": 15,
+      "userId": 17,
+      "time": 6918.470764,
+      "points": 0.0
+    },
+    {
+      "submissionId": 317,
+      "problemId": 15,
+      "userId": 17,
+      "time": 7091.455422,
+      "points": 0.0
+    },
+    {
+      "submissionId": 347,
+      "problemId": 20,
+      "userId": 17,
+      "time": 9171.175416,
+      "points": 1.0
+    },
+    {
+      "submissionId": 397,
+      "problemId": 15,
+      "userId": 17,
+      "time": 13831.735634,
+      "points": 1.0
+    },
+    {
+      "submissionId": 498,
+      "problemId": 23,
+      "userId": 17,
+      "time": 17789.177876,
+      "points": 0.0
+    },
+    {
+      "submissionId": 499,
+      "problemId": 23,
+      "userId": 17,
+      "time": 17853.802403,
+      "points": 0.0
+    },
+    {
+      "submissionId": 503,
+      "problemId": 23,
+      "userId": 17,
+      "time": 17916.173379,
+      "points": 0.0
+    },
+    {
+      "submissionId": 109,
+      "problemId": 20,
+      "userId": 18,
+      "time": 119.216944,
+      "points": 0.0
+    },
+    {
+      "submissionId": 113,
+      "problemId": 20,
+      "userId": 18,
+      "time": 179.685257,
+      "points": 0.0
+    },
+    {
+      "submissionId": 119,
+      "problemId": 20,
+      "userId": 18,
+      "time": 308.413178,
+      "points": 1.0
+    },
+    {
+      "submissionId": 142,
+      "problemId": 22,
+      "userId": 18,
+      "time": 603.066195,
+      "points": 1.0
+    },
+    {
+      "submissionId": 200,
+      "problemId": 13,
+      "userId": 18,
+      "time": 2170.836717,
+      "points": 0.0
+    },
+    {
+      "submissionId": 201,
+      "problemId": 13,
+      "userId": 18,
+      "time": 2199.033364,
+      "points": 0.0
+    },
+    {
+      "submissionId": 218,
+      "problemId": 17,
+      "userId": 18,
+      "time": 2843.852006,
+      "points": 0.0
+    },
+    {
+      "submissionId": 222,
+      "problemId": 17,
+      "userId": 18,
+      "time": 2898.178504,
+      "points": 0.0
+    },
+    {
+      "submissionId": 223,
+      "problemId": 17,
+      "userId": 18,
+      "time": 2925.494037,
+      "points": 1.0
+    },
+    {
+      "submissionId": 256,
+      "problemId": 15,
+      "userId": 18,
+      "time": 4739.430867,
+      "points": 0.0
+    },
+    {
+      "submissionId": 263,
+      "problemId": 15,
+      "userId": 18,
+      "time": 5094.634587,
+      "points": 0.0
+    },
+    {
+      "submissionId": 277,
+      "problemId": 15,
+      "userId": 18,
+      "time": 5656.862474,
+      "points": 1.0
+    },
+    {
+      "submissionId": 337,
+      "problemId": 12,
+      "userId": 18,
+      "time": 8479.361574,
+      "points": 0.0
+    },
+    {
+      "submissionId": 339,
+      "problemId": 12,
+      "userId": 18,
+      "time": 8525.070108,
+      "points": 0.0
+    },
+    {
+      "submissionId": 442,
+      "problemId": 12,
+      "userId": 18,
+      "time": 15393.049604,
+      "points": 1.0
+    },
+    {
+      "submissionId": 496,
+      "problemId": 14,
+      "userId": 18,
+      "time": 17737.539823,
+      "points": 0.0
+    },
+    {
+      "submissionId": 169,
+      "problemId": 13,
+      "userId": 19,
+      "time": 1378.953781,
+      "points": 0.0
+    },
+    {
+      "submissionId": 170,
+      "problemId": 22,
+      "userId": 19,
+      "time": 1407.670364,
+      "points": 0.0
+    },
+    {
+      "submissionId": 212,
+      "problemId": 22,
+      "userId": 19,
+      "time": 2672.17632,
+      "points": 0.0
+    },
+    {
+      "submissionId": 219,
+      "problemId": 22,
+      "userId": 19,
+      "time": 2856.565443,
+      "points": 1.0
+    },
+    {
+      "submissionId": 261,
+      "problemId": 20,
+      "userId": 19,
+      "time": 4860.528627,
+      "points": 1.0
+    },
+    {
+      "submissionId": 392,
+      "problemId": 17,
+      "userId": 19,
+      "time": 13377.64438,
+      "points": 0.0
+    },
+    {
+      "submissionId": 418,
+      "problemId": 15,
+      "userId": 19,
+      "time": 14591.294638,
+      "points": 0.0
+    },
+    {
+      "submissionId": 422,
+      "problemId": 15,
+      "userId": 19,
+      "time": 14659.4636,
+      "points": 0.0
+    },
+    {
+      "submissionId": 423,
+      "problemId": 15,
+      "userId": 19,
+      "time": 14700.719219,
+      "points": 0.0
+    },
+    {
+      "submissionId": 453,
+      "problemId": 15,
+      "userId": 19,
+      "time": 15987.432041,
+      "points": 0.0
+    },
+    {
+      "submissionId": 455,
+      "problemId": 15,
+      "userId": 19,
+      "time": 16024.722852,
+      "points": 0.0
+    },
+    {
+      "submissionId": 460,
+      "problemId": 15,
+      "userId": 19,
+      "time": 16071.100048,
+      "points": 0.0
+    },
+    {
+      "submissionId": 461,
+      "problemId": 15,
+      "userId": 19,
+      "time": 16137.422857,
+      "points": 0.0
+    },
+    {
+      "submissionId": 474,
+      "problemId": 17,
+      "userId": 19,
+      "time": 17020.084499,
+      "points": 0.0
+    },
+    {
+      "submissionId": 480,
+      "problemId": 15,
+      "userId": 19,
+      "time": 17294.845089,
+      "points": 0.0
+    },
+    {
+      "submissionId": 486,
+      "problemId": 15,
+      "userId": 19,
+      "time": 17470.288602,
+      "points": 0.0
+    },
+    {
+      "submissionId": 492,
+      "problemId": 15,
+      "userId": 19,
+      "time": 17626.965318,
+      "points": 0.0
+    },
+    {
+      "submissionId": 495,
+      "problemId": 15,
+      "userId": 19,
+      "time": 17694.45448,
+      "points": 0.0
+    },
+    {
+      "submissionId": 125,
+      "problemId": 20,
+      "userId": 20,
+      "time": 383.05252,
+      "points": 0.0
+    },
+    {
+      "submissionId": 130,
+      "problemId": 20,
+      "userId": 20,
+      "time": 426.750595,
+      "points": 1.0
+    },
+    {
+      "submissionId": 153,
+      "problemId": 22,
+      "userId": 20,
+      "time": 882.932511,
+      "points": 0.0
+    },
+    {
+      "submissionId": 157,
+      "problemId": 22,
+      "userId": 20,
+      "time": 939.103981,
+      "points": 1.0
+    },
+    {
+      "submissionId": 174,
+      "problemId": 17,
+      "userId": 20,
+      "time": 1465.044331,
+      "points": 0.0
+    },
+    {
+      "submissionId": 180,
+      "problemId": 17,
+      "userId": 20,
+      "time": 1682.839969,
+      "points": 0.0
+    },
+    {
+      "submissionId": 189,
+      "problemId": 17,
+      "userId": 20,
+      "time": 1861.491948,
+      "points": 1.0
+    },
+    {
+      "submissionId": 206,
+      "problemId": 15,
+      "userId": 20,
+      "time": 2279.833287,
+      "points": 0.0
+    },
+    {
+      "submissionId": 213,
+      "problemId": 15,
+      "userId": 20,
+      "time": 2691.415631,
+      "points": 1.0
+    },
+    {
+      "submissionId": 224,
+      "problemId": 13,
+      "userId": 20,
+      "time": 2929.479425,
+      "points": 1.0
+    },
+    {
+      "submissionId": 258,
+      "problemId": 19,
+      "userId": 20,
+      "time": 4772.312159,
+      "points": 1.0
+    },
+    {
+      "submissionId": 289,
+      "problemId": 24,
+      "userId": 20,
+      "time": 6239.444028,
+      "points": 1.0
+    },
+    {
+      "submissionId": 326,
+      "problemId": 16,
+      "userId": 20,
+      "time": 7880.007118,
+      "points": 1.0
+    },
+    {
+      "submissionId": 345,
+      "problemId": 12,
+      "userId": 20,
+      "time": 9070.889466,
+      "points": 1.0
+    },
+    {
+      "submissionId": 377,
+      "problemId": 14,
+      "userId": 20,
+      "time": 10944.56839,
+      "points": 1.0
+    },
+    {
+      "submissionId": 425,
+      "problemId": 25,
+      "userId": 20,
+      "time": 14772.580339,
+      "points": 1.0
+    },
+    {
+      "submissionId": 479,
+      "problemId": 18,
+      "userId": 20,
+      "time": 17237.709999,
+      "points": 0.0
+    },
+    {
+      "submissionId": 483,
+      "problemId": 18,
+      "userId": 20,
+      "time": 17346.518447,
+      "points": 0.0
+    },
+    {
+      "submissionId": 489,
+      "problemId": 18,
+      "userId": 20,
+      "time": 17506.359665,
+      "points": 0.0
+    },
+    {
+      "submissionId": 490,
+      "problemId": 18,
+      "userId": 20,
+      "time": 17575.445655,
+      "points": 0.0
+    },
+    {
+      "submissionId": 505,
+      "problemId": 18,
+      "userId": 20,
+      "time": 17944.122921,
+      "points": 0.0
+    },
+    {
+      "submissionId": 506,
+      "problemId": 18,
+      "userId": 20,
+      "time": 17955.675517,
+      "points": 0.0
+    },
+    {
+      "submissionId": 508,
+      "problemId": 18,
+      "userId": 20,
+      "time": 17964.146699,
+      "points": 0.0
+    },
+    {
+      "submissionId": 510,
+      "problemId": 18,
+      "userId": 20,
+      "time": 17972.861868,
+      "points": 0.0
+    },
+    {
+      "submissionId": 133,
+      "problemId": 22,
+      "userId": 21,
+      "time": 465.317562,
+      "points": 1.0
+    },
+    {
+      "submissionId": 198,
+      "problemId": 24,
+      "userId": 21,
+      "time": 2121.949463,
+      "points": 1.0
+    },
+    {
+      "submissionId": 230,
+      "problemId": 17,
+      "userId": 21,
+      "time": 3012.438564,
+      "points": 1.0
+    },
+    {
+      "submissionId": 237,
+      "problemId": 15,
+      "userId": 21,
+      "time": 3340.641748,
+      "points": 0.0
+    },
+    {
+      "submissionId": 242,
+      "problemId": 20,
+      "userId": 21,
+      "time": 3811.686149,
+      "points": 1.0
+    },
+    {
+      "submissionId": 283,
+      "problemId": 15,
+      "userId": 21,
+      "time": 6118.486666,
+      "points": 1.0
+    },
+    {
+      "submissionId": 356,
+      "problemId": 13,
+      "userId": 21,
+      "time": 9746.366777,
+      "points": 1.0
+    },
+    {
+      "submissionId": 385,
+      "problemId": 19,
+      "userId": 21,
+      "time": 12281.960343,
+      "points": 1.0
+    },
+    {
+      "submissionId": 444,
+      "problemId": 12,
+      "userId": 21,
+      "time": 15415.455653,
+      "points": 1.0
+    },
+    {
+      "submissionId": 124,
+      "problemId": 20,
+      "userId": 22,
+      "time": 378.144765,
+      "points": 1.0
+    },
+    {
+      "submissionId": 150,
+      "problemId": 22,
+      "userId": 22,
+      "time": 791.826976,
+      "points": 1.0
+    },
+    {
+      "submissionId": 243,
+      "problemId": 23,
+      "userId": 22,
+      "time": 3815.889908,
+      "points": 0.0
+    },
+    {
+      "submissionId": 257,
+      "problemId": 17,
+      "userId": 22,
+      "time": 4739.818679,
+      "points": 0.0
+    },
+    {
+      "submissionId": 266,
+      "problemId": 17,
+      "userId": 22,
+      "time": 5180.479935,
+      "points": 1.0
+    },
+    {
+      "submissionId": 324,
+      "problemId": 23,
+      "userId": 22,
+      "time": 7810.657575,
+      "points": 0.0
+    },
+    {
+      "submissionId": 331,
+      "problemId": 15,
+      "userId": 22,
+      "time": 8191.606655,
+      "points": 0.0
+    },
+    {
+      "submissionId": 348,
+      "problemId": 15,
+      "userId": 22,
+      "time": 9227.456987,
+      "points": 0.0
+    },
+    {
+      "submissionId": 350,
+      "problemId": 15,
+      "userId": 22,
+      "time": 9293.178611,
+      "points": 0.0
+    },
+    {
+      "submissionId": 368,
+      "problemId": 23,
+      "userId": 22,
+      "time": 10538.5992,
+      "points": 0.0
+    },
+    {
+      "submissionId": 386,
+      "problemId": 15,
+      "userId": 22,
+      "time": 12308.767159,
+      "points": 0.0
+    },
+    {
+      "submissionId": 433,
+      "problemId": 23,
+      "userId": 22,
+      "time": 15078.672713,
+      "points": 0.0
+    },
+    {
+      "submissionId": 435,
+      "problemId": 23,
+      "userId": 22,
+      "time": 15091.903237,
+      "points": 0.0
+    },
+    {
+      "submissionId": 457,
+      "problemId": 15,
+      "userId": 22,
+      "time": 16041.863894,
+      "points": 0.0
+    },
+    {
+      "submissionId": 470,
+      "problemId": 15,
+      "userId": 22,
+      "time": 16738.399237,
+      "points": 0.0
+    },
+    {
+      "submissionId": 475,
+      "problemId": 15,
+      "userId": 22,
+      "time": 17028.136558,
+      "points": 1.0
+    },
+    {
+      "submissionId": 494,
+      "problemId": 23,
+      "userId": 22,
+      "time": 17693.287949,
+      "points": 0.0
+    },
+    {
+      "submissionId": 139,
+      "problemId": 20,
+      "userId": 23,
+      "time": 528.290197,
+      "points": 1.0
+    },
+    {
+      "submissionId": 160,
+      "problemId": 13,
+      "userId": 23,
+      "time": 1189.983215,
+      "points": 1.0
+    },
+    {
+      "submissionId": 167,
+      "problemId": 13,
+      "userId": 23,
+      "time": 1339.207614,
+      "points": 0.0
+    },
+    {
+      "submissionId": 173,
+      "problemId": 13,
+      "userId": 23,
+      "time": 1462.641774,
+      "points": 0.0
+    },
+    {
+      "submissionId": 179,
+      "problemId": 22,
+      "userId": 23,
+      "time": 1658.804063,
+      "points": 1.0
+    },
+    {
+      "submissionId": 207,
+      "problemId": 17,
+      "userId": 23,
+      "time": 2347.332209,
+      "points": 0.0
+    },
+    {
+      "submissionId": 216,
+      "problemId": 17,
+      "userId": 23,
+      "time": 2840.775545,
+      "points": 0.0
+    },
+    {
+      "submissionId": 272,
+      "problemId": 15,
+      "userId": 23,
+      "time": 5383.091571,
+      "points": 0.0
+    },
+    {
+      "submissionId": 282,
+      "problemId": 17,
+      "userId": 23,
+      "time": 6031.683031,
+      "points": 0.0
+    },
+    {
+      "submissionId": 285,
+      "problemId": 17,
+      "userId": 23,
+      "time": 6129.424466,
+      "points": 0.0
+    },
+    {
+      "submissionId": 287,
+      "problemId": 17,
+      "userId": 23,
+      "time": 6181.376112,
+      "points": 1.0
+    },
+    {
+      "submissionId": 292,
+      "problemId": 15,
+      "userId": 23,
+      "time": 6255.308494,
+      "points": 0.0
+    },
+    {
+      "submissionId": 298,
+      "problemId": 15,
+      "userId": 23,
+      "time": 6445.953581,
+      "points": 1.0
+    },
+    {
+      "submissionId": 314,
+      "problemId": 24,
+      "userId": 23,
+      "time": 7020.574209,
+      "points": 0.0
+    },
+    {
+      "submissionId": 316,
+      "problemId": 24,
+      "userId": 23,
+      "time": 7053.178546,
+      "points": 0.0
+    },
+    {
+      "submissionId": 327,
+      "problemId": 12,
+      "userId": 23,
+      "time": 7951.435379,
+      "points": 1.0
+    },
+    {
+      "submissionId": 357,
+      "problemId": 19,
+      "userId": 23,
+      "time": 9818.434527,
+      "points": 1.0
+    },
+    {
+      "submissionId": 376,
+      "problemId": 24,
+      "userId": 23,
+      "time": 10853.664208,
+      "points": 1.0
+    },
+    {
+      "submissionId": 409,
+      "problemId": 14,
+      "userId": 23,
+      "time": 14107.947494,
+      "points": 0.0
+    },
+    {
+      "submissionId": 411,
+      "problemId": 14,
+      "userId": 23,
+      "time": 14133.188456,
+      "points": 1.0
+    },
+    {
+      "submissionId": 115,
+      "problemId": 22,
+      "userId": 24,
+      "time": 211.819863,
+      "points": 0.0
+    },
+    {
+      "submissionId": 121,
+      "problemId": 22,
+      "userId": 24,
+      "time": 336.566421,
+      "points": 0.0
+    },
+    {
+      "submissionId": 126,
+      "problemId": 22,
+      "userId": 24,
+      "time": 407.098647,
+      "points": 1.0
+    },
+    {
+      "submissionId": 163,
+      "problemId": 20,
+      "userId": 24,
+      "time": 1266.886462,
+      "points": 1.0
+    },
+    {
+      "submissionId": 184,
+      "problemId": 17,
+      "userId": 24,
+      "time": 1765.104122,
+      "points": 0.0
+    },
+    {
+      "submissionId": 192,
+      "problemId": 17,
+      "userId": 24,
+      "time": 1959.398149,
+      "points": 0.0
+    },
+    {
+      "submissionId": 202,
+      "problemId": 17,
+      "userId": 24,
+      "time": 2227.994514,
+      "points": 1.0
+    },
+    {
+      "submissionId": 217,
+      "problemId": 15,
+      "userId": 24,
+      "time": 2843.413328,
+      "points": 0.0
+    },
+    {
+      "submissionId": 229,
+      "problemId": 15,
+      "userId": 24,
+      "time": 3012.098777,
+      "points": 0.0
+    },
+    {
+      "submissionId": 247,
+      "problemId": 15,
+      "userId": 24,
+      "time": 4112.036548,
+      "points": 0.0
+    },
+    {
+      "submissionId": 254,
+      "problemId": 15,
+      "userId": 24,
+      "time": 4478.380784,
+      "points": 0.0
+    },
+    {
+      "submissionId": 264,
+      "problemId": 19,
+      "userId": 24,
+      "time": 5100.963198,
+      "points": 1.0
+    },
+    {
+      "submissionId": 278,
+      "problemId": 23,
+      "userId": 24,
+      "time": 5658.701204,
+      "points": 1.0
+    },
+    {
+      "submissionId": 284,
+      "problemId": 15,
+      "userId": 24,
+      "time": 6119.141393,
+      "points": 0.0
+    },
+    {
+      "submissionId": 335,
+      "problemId": 15,
+      "userId": 24,
+      "time": 8280.811837,
+      "points": 0.0
+    },
+    {
+      "submissionId": 338,
+      "problemId": 15,
+      "userId": 24,
+      "time": 8507.521608,
+      "points": 1.0
+    },
+    {
+      "submissionId": 374,
+      "problemId": 24,
+      "userId": 24,
+      "time": 10830.098261,
+      "points": 0.0
+    },
+    {
+      "submissionId": 382,
+      "problemId": 24,
+      "userId": 24,
+      "time": 11858.437636,
+      "points": 0.0
+    },
+    {
+      "submissionId": 417,
+      "problemId": 13,
+      "userId": 24,
+      "time": 14505.735581,
+      "points": 1.0
+    },
+    {
+      "submissionId": 462,
+      "problemId": 24,
+      "userId": 24,
+      "time": 16147.867836,
+      "points": 0.0
+    },
+    {
+      "submissionId": 464,
+      "problemId": 24,
+      "userId": 24,
+      "time": 16268.39482,
+      "points": 0.0
+    },
+    {
+      "submissionId": 465,
+      "problemId": 24,
+      "userId": 24,
+      "time": 16520.258657,
+      "points": 0.0
+    }
+  ]
+}
