@@ -139,26 +139,28 @@ function getScoreClass(userPoints: number, problemPoints: number) {
   // }
 }
 
-function calculatePenalty(user: InternalUser, submissionById: SubmissionById) {
+function calculatePenalty(user: InternalUser, submissionById: SubmissionById) { // VNOJ Format
   if (user.lastAlteringScoreSubmissionId === -1) {
     return 0;
   }
 
-  let incorrect = 0;
+  let total_penalty = 0;
   for (const [problemId, last] of Object.entries(
     user.lastAlteringScoreSubmissionIdByProblemId
   )) {
     if (submissionById[last].points === 0) {
       continue;
     }
-
+    
+    let incorrect = 0;
     incorrect += user.submissionIdsByProblemId[problemId as any].filter(
       (submissionId) => submissionId < last
     ).length;
+    total_penalty += submissionById[last].time + 300 * incorrect
   }
 
   return (
-    submissionById[user.lastAlteringScoreSubmissionId].time + 300 * incorrect // '1200' for ICPC, '300' for VNOJ
+    total_penalty
   );
 }
 
@@ -210,7 +212,7 @@ function resolvePendingSubmission({
     submissionId
   );
 
-  user.penalty += calculatePenalty(user, submissionById); // '=' for VNOJ, '+=' for ICPC
+  user.penalty = calculatePenalty(user, submissionById);
 
   setState({ ...state, markedProblemId: -1, nextSubmissionId: -1 });
 }
