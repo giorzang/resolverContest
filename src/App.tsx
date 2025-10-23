@@ -359,7 +359,7 @@ function Ranking({
                   return (
                     <td key={cell.id}>
                       <div className={className}>
-                        {status !== ProblemAttemptStatus.UNATTEMPTED &&
+                        {status !== ProblemAttemptStatus.UNATTEMPTED && !isPending &&
                           submissionPoints}
                         {isPending && <span>?</span>}
                       </div>

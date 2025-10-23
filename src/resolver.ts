@@ -107,37 +107,39 @@ function getProblemCodeFromIndex(index: number) {
 }
 
 function getScoreClass(userPoints: number, problemPoints: number) {
-  if (userPoints === problemPoints) {
-    return 'score_100';
-  } else if (userPoints === 0) {
-    return 'score_0';
-  } else {
-    return 'score_40_50';
-  }
-
-  // const ratio = userPoints / problemPoints;
-  // if (ratio >= 0.9) {
-  //   return 'score_90_100';
-  // } else if (ratio >= 0.8) {
-  //   return 'score_80_90';
-  // } else if (ratio >= 0.7) {
-  //   return 'score_70_80';
-  // } else if (ratio >= 0.6) {
-  //   return 'score_60_70';
-  // } else if (ratio >= 0.5) {
-  //   return 'score_50_60';
-  // } else if (ratio >= 0.4) {
-  //   return 'score_40_50';
-  // } else if (ratio >= 0.3) {
-  //   return 'score_30_40';
-  // } else if (ratio >= 0.2) {
-  //   return 'score_20_30';
-  // } else if (ratio >= 0.1) {
-  //   return 'score_10_20';
+  // if (userPoints === problemPoints) {
+  //   return 'score_100';
+  // } else if (userPoints === 0) {
+  //   return 'score_0';
   // } else {
-  //   return 'score_0_10';
+  //   return score_40_50;
   // }
+  
+  const ratio = userPoints / problemPoints;
+  if (ratio >= 0.9) {
+    return 'score_90_100';
+  } else if (ratio >= 0.8) {
+    return 'score_80_90';
+  } else if (ratio >= 0.7) {
+    return 'score_70_80';
+  } else if (ratio >= 0.6) {
+    return 'score_60_70';
+  } else if (ratio >= 0.5) {
+    return 'score_50_60';
+  } else if (ratio >= 0.4) {
+    return 'score_40_50';
+  } else if (ratio >= 0.3) {
+    return 'score_30_40';
+  } else if (ratio >= 0.2) {
+    return 'score_20_30';
+  } else if (ratio >= 0.1) {
+    return 'score_10_20';
+  } else {
+    return 'score_0_10';
+  }
 }
+
+let format = 1; // 0: VNOJ, 1: ICPC
 
 function calculatePenalty(user: InternalUser, submissionById: SubmissionById) { // VNOJ Format
   if (user.lastAlteringScoreSubmissionId === -1) {
@@ -157,7 +159,11 @@ function calculatePenalty(user: InternalUser, submissionById: SubmissionById) { 
       (submissionId) => submissionId < last
     ).length;
 
-    total_penalty += submissionById[last].time + 1200 * incorrect
+    if (format === 0) {
+      total_penalty += submissionById[last].time + 300 * incorrect
+    } else {
+      total_penalty += Math.floor(submissionById[last].time / 60) * 60 + 1200 * incorrect
+    }
   }
 
   return (
@@ -339,9 +345,9 @@ export function useResolver({
 
     columns.push({
       id: 'penalty',
-      header: 'Time',
+      header: (format === 0 ? 'Time' : 'Penalty'),
       accessorFn: (row) =>
-        new Date(row.penalty * 1000).toISOString().substring(11, 19)
+        format === 0 ? Math.floor(row.penalty / 60) : new Date(row.penalty * 1000).toISOString().substring(11, 19)
     });
 
     return columns;
