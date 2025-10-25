@@ -159,11 +159,7 @@ function calculatePenalty(user: InternalUser, submissionById: SubmissionById) { 
       (submissionId) => submissionId < last
     ).length;
 
-    if (format === 0) {
-      total_penalty += submissionById[last].time + 300 * incorrect
-    } else {
-      total_penalty += Math.floor(submissionById[last].time / 60) * 60 + 1200 * incorrect
-    }
+    total_penalty += format === 0 ? submissionById[last].time + 300 * incorrect : Math.floor(submissionById[last].time / 60) * 60 + 1200 * incorrect
   }
 
   return (
@@ -347,7 +343,7 @@ export function useResolver({
       id: 'penalty',
       header: (format === 0 ? 'Time' : 'Penalty'),
       accessorFn: (row) =>
-        format === 0 ? Math.floor(row.penalty / 60) : new Date(row.penalty * 1000).toISOString().substring(11, 19)
+        format === 0 ? new Date(row.penalty * 1000).toISOString().substring(11, 19) : Math.floor(row.penalty / 60)
     });
 
     return columns;
