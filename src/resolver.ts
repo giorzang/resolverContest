@@ -139,7 +139,7 @@ function getScoreClass(userPoints: number, problemPoints: number) {
   }
 }
 
-let format = 1; // 0: VNOJ, 1: ICPC
+let format = 0; // 0: VNOJ, 1: ICPC
 
 function calculatePenalty(user: InternalUser, submissionById: SubmissionById) { // VNOJ Format
   if (user.lastAlteringScoreSubmissionId === -1) {
@@ -316,21 +316,8 @@ export function useResolver({
       header: 'Name',
       accessorFn: (row: UserRow) => ({
         fullName: row.fullName,
-        username: row.username
+        username: format === 0 ? '(' + row.username + ')' : ''
       })
-    });
-
-    inputData.problems.forEach((problem, index) => {
-      columns.push({
-        id: `problem_${problem.problemId}`,
-        header: getProblemCodeFromIndex(index),
-        accessorFn: (row: UserRow) => row.points[problem.problemId],
-        meta: {
-          isProblem: true,
-          problemId: problem.problemId,
-          points: problem.points
-        }
-      });
     });
 
     columns.push({
@@ -345,6 +332,20 @@ export function useResolver({
       accessorFn: (row) =>
         format === 0 ? new Date(row.penalty * 1000).toISOString().substring(11, 19) : Math.floor(row.penalty / 60)
     });
+    
+    inputData.problems.forEach((problem, index) => {
+      columns.push({
+        id: `problem_${problem.problemId}`,
+        header: getProblemCodeFromIndex(index),
+        accessorFn: (row: UserRow) => row.points[problem.problemId],
+        meta: {
+          isProblem: true,
+          problemId: problem.problemId,
+          points: problem.points
+        }
+      });
+    });
+
 
     return columns;
   }, [inputData.problems]);

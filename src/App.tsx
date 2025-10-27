@@ -336,7 +336,7 @@ function Ranking({
                     return (
                       <td key={cell.id}>
                         <b>{fullName}</b>
-                        &nbsp;({username})
+                        &nbsp;{username}
                       </td>
                     );
                   }
